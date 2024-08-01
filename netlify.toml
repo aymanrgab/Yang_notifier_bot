@@ -6,3 +6,12 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "chrome-extension://cghfdfnnfndgopbgmphmljjjbegnkeep", Access-Control-Allow-Methods = "GET, POST, OPTIONS", Access-Control-Allow-Headers = "Content-Type"}
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "chrome-extension://cghfdfnnfndgopbgmphmljjjbegnkeep"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"

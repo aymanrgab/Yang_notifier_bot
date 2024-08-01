@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "axios": "^0.21.1",
-    "faunadb" : "^3.15.1"
+    "faunadb": "^4.8.0"
   }
 }
